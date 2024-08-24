@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSIR-NET Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+   
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <div class="nav" id="nav">
+            <div id="SkillSphere-logo">
+                <a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
+            </div>
+            <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+            <ul id="list-switch">
+                <li><a href="#"><img src="../images/courses/csir-net logo.jpeg" class="icon">CSIR-NET</a></li>
+                <li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Computer Courses</a></li>
+                <li><a href="computer_courses.html#data"><img src="../images/courses/data.png" class="icon">Data Structures</a></li>
+                <li><a href="computer_courses.html#algo"><img src="../images/courses/algo.png" class="icon">Algorithm</a></li>
+                <li><a href="mock_test.html"><img src="../images/icon/papers.jpg" class="icon">Mock test</a></li>
+            </ul>
+            <div class="search" id="search-switch">
+                <input type="text" placeholder="Search" class="srch"><button id="srchbtn"><img src="../images/icon/search.png"></button>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br>
+<!-- Modal structure -->
+<div id="scoreModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Test Completed</h2>
+      <p id="finalScore"></p>
+      <div id="results" class="results"></div>
+    </div>
+  </div>
+  
+    <!-- Quiz Content -->
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>CSIR-NET Quiz</h1>
+            <div id="timer">Time remaining: 20:00</div>
+        </div>
+        <div class="quiz-body">
+            <div id="question-container">
+             
+                <img id="question-image" src=" " alt="Question Image" style="display: none; max-width: 100%; height: auto;">
+                <div id="options-container"></div>
+            </div>
+        </div>
+        <div class="quiz-footer">
+            <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+            <button id="submit-btn" onclick="submitQuiz()">Submit</button>
+        </div>
+    </div>
+    <p id="submissionReminder" style="display: none; color: red;">Please submit the test this is the last question!</p>
+
+<br><br><br><br> <br><br><br><br><br>
+<script type="text/javascript" src="csir-net_quiz2.js"></script>
+
+<!-- FOOTER -->
+<footer>
+	<div class="footer-container">
+		<div class="left-col">
+			<div class="logo"></div>
+			<div class="social-media">
+				<a href="#"><img src="fb.png"></a>
+				<a href="#"><img src="insta.png"></a>
+				<a href="#"><img src="tt.png"></a>
+				<a href="#"><img src="ytube.png"></a>
+				<a href="#"><img src="linkedin.png"></a>
+			</div><br><br>
+			<p class="rights-text">Copyright © 2024 Created By Harsh Gautam All Rights Reserved.</p>
+			<p><img src="phone.png"> +91-9999-999-999<br><img src="mail.png">&nbsp; harsh07.india@gmail.com</p>
+		</div>
+		<div class="right-col">
+		</div>
+	</div>
+</footer>
+</body>
+</html>
